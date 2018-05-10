@@ -1,0 +1,14 @@
+{
+  "name": "dirq_ui",
+  "version": "0.1.10",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/teptek/dirq.git"
+  },
+  "description": "UI DIRQ SCSS Sources",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tep Tek",
+  "license": "ISC"
+}
