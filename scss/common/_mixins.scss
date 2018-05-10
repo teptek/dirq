@@ -1,0 +1,7 @@
+@mixin ease ($css-ease){
+  -webkit-transition: $css-ease 0.3s ease 0s;
+  -moz-transition: $css-ease 0.3s ease 0s;
+  -ms-transition: $css-ease 0.3s ease 0s;
+  -o-transition: $css-ease 0.3s ease 0s;
+  transition: $css-ease 0.3s ease 0s;
+}

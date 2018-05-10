@@ -1,0 +1,31 @@
+/* scss/elements/_search-ipn.scss */
+
+.search-user {
+  margin-bottom: 25px;
+  border-bottom: 1px solid $light-grey;
+  &:hover, &:focus {
+    border-bottom: 1px solid $light-blue;
+  }
+  input[type='text'] {
+    padding: 0 0 0px 8px;
+    width: calc(100% - 49px);
+    border: medium none;
+    height: 38px;
+    font-family: Read;
+    font-size: 14px;
+    outline-style:none;
+    box-shadow:none;
+    border-color:transparent;
+  }
+  button {
+    cursor: pointer;
+    float: right;
+    height: 40px;
+    width: 40px;
+    border: medium none;
+    background: url('../img/ico-search.svg') no-repeat center;
+    outline-style:none;
+    box-shadow:none;
+    border-color:transparent;
+  }
+}

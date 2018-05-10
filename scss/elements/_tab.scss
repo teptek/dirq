@@ -1,0 +1,33 @@
+/* scss/elements/_tab.scss */
+
+.rtab {
+  .rtab-list {
+    @extend h3;
+    .rtab-item {
+      display: inline;
+      border-bottom: 3px solid transparent;
+      text-align: center;
+      padding: 0 10px 6px;
+      margin: 0 10px 0 0;
+      @include ease(border-color);
+      border-bottom: 3px solid transparent;
+      &.active {
+        border-bottom: 3px solid $sun-yellow;
+        @include ease(border-color);
+      }
+      &:not(.active) {
+        color: $warm-grey;
+        cursor: pointer;
+        &:hover, &:focus {
+          color: #000;
+          border-bottom: 3px solid $sun-yellow;
+          @include ease(border-color);
+        }
+      }
+    }
+  }
+  .tab-content {
+    border-medium: none;
+    padding: 5px;
+  }
+}

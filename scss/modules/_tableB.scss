@@ -1,0 +1,32 @@
+/* scss/modules/_tableB.scss */
+
+.table-b {
+  .table-color-tag {
+    width: 25%;
+  }
+  .table-two-lines {
+    width: 25%;
+    & > a {
+      font-size: 16px;
+      color: $light-blue;
+    }
+    & > .light-text {
+      font-size: 12px;
+    }
+  }
+  td:last-child {
+    text-align: right;
+    width: 25%;
+  }
+  .table-countries {
+    width: 120px;
+    .country-code {
+      visibility: hidden;
+    }
+    &:focus, &:hover {
+      .country-code {
+        visibility: visible;
+      }
+    }
+  }
+}

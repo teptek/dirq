@@ -1,0 +1,72 @@
+/* scss/modules/_tableA.scss */
+
+table {
+  border: 1px solid $white;
+  background-color: white;
+  width: 100%;
+  tr {
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid $white;
+    &:last-child {
+      border-bottom: medium none;
+    }
+  }
+  td {
+    padding: 16px 0;
+    font-weight: 500;
+    &:first-child {
+      padding-left: 12px;
+    }
+    &:last-child {
+      padding-right: 12px;
+    }
+  }
+  .table-separator {
+    width: 21px;
+    div {
+      background-color: $white;
+      width: 1px;
+      height: 20px;
+      margin: 0 10px;
+    }
+  }
+}
+
+.table-countries {
+  display: table-cell;
+  vertical-align: middle;
+  width: 96px;
+  & > div {
+    display: inherit;
+  }
+  .country-code {
+    vertical-align: middle;
+    display: table-cell;
+    height: 20px;
+    padding-left: 7px;
+  }
+}
+
+.table-two-lines {
+  padding: 0 0 0 5px;
+  p {
+    margin: 0;
+  }
+  .light-text {
+    font-weight: 300;
+  }
+}
+
+.table-option {
+  a {
+    background: url('../img/more.svg') no-repeat center;
+    display: block;
+    float: right;
+    width: 18px;
+    height: 20px;
+    &:hover, &focus {
+      background: url('../img/more-hover.svg') no-repeat center;
+    }
+  }
+}

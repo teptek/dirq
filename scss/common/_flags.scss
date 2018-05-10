@@ -1,0 +1,30 @@
+@mixin country-flag ($country-code) {
+  background: url('../flags/#{$country-code}.svg') no-repeat;
+  width: 28px;
+  height: 20px;
+  display: inline-block;
+}
+
+.country-flag-fr {
+  @include country-flag(FR);
+}
+
+.country-flag-us {
+  @include country-flag(US);
+}
+
+.country-flag-zw {
+  @include country-flag(ZW);
+}
+
+.country-flag-lv {
+  @include country-flag(LV);
+}
+
+.country-flag-ge {
+  @include country-flag(GE);
+}
+
+.country-flag-ro {
+  @include country-flag(RO);
+}
