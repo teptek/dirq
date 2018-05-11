@@ -1,6 +1,6 @@
 {
   "name": "dirq_ui",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "repository": {
     "type": "git",
     "url": "git://github.com/teptek/dirq.git"
@@ -10,5 +10,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tep Tek",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teptek/dirq/issues"
+  },
+  "homepage": "https://github.com/teptek/dirq#readme",
+  "main": "index.js"
 }
