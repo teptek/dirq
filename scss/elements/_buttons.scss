@@ -1,8 +1,9 @@
 /* scss/elements/_Buttons.scss */
 
 @mixin button {
+  @include border-radius(3px);
   font-family: Read;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
@@ -13,7 +14,7 @@
   background-color: transparent;
   border: 0;
   cursor: pointer;
-  padding: 10px 14px;
+  padding: 12px 16px;
   @include ease(background-color);
   &:hover, &:focus {
     @include ease(background-color);

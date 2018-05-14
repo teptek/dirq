@@ -3,6 +3,7 @@
 .field-action {
   margin-bottom: 25px;
   input[type='text'] {
+    @include border-radius(3px 0 0 3px);
     padding: 0 0 0px 8px;
     width: calc(100% - 49px);
     border: 1px solid #e1e1e1;
@@ -10,8 +11,10 @@
     height: 38px;
     font-family: Read;
     font-size: 14px;
+    outline: none;
   }
   button {
+    @include border-radius(0 3px 3px 0);
     cursor: pointer;
     float: right;
     height: 40px;
