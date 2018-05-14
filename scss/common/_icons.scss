@@ -1,0 +1,12 @@
+.ico {
+  height: 70px;
+  width: 70px;
+  background-color: $light-grey;
+  @include border-radius(70px);
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  &.ico-validation {
+    background-image: url('../img/ico-validation.svg');
+  }
+}

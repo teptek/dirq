@@ -1,0 +1,49 @@
+@mixin sidenav {
+  .sidenav {
+    font-family: RenaultLife;
+    float: left;
+    width: $sidebar-width;
+    @include ease(width);
+    position: absolute;
+    .sidenav-item {
+      border-left: 3px solid transparent;
+      color: $dark-grey-blue;
+      font-weight: 600;
+      display: table;
+      padding: 0 0 8px 13px;
+      opacity: 0.65;
+      @include ease(opacity);
+      &:before {
+        content: '';
+        height: 24px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 24px;
+        display: inline-block;
+        top: 7px;
+        position: relative;
+        margin-right: 15px;
+      }
+      &.active, &:focus, &:hover {
+        border-left: 3px solid $dark-grey-blue;
+        opacity: 1;
+        @include ease(opacity);
+      }
+    }
+    .sidenav-item-dashboard {
+      &:before {
+        background-image: url("../img/ico-dashboard.svg");
+      }
+    }
+    .sidenav-item-assistant-bim {
+      &:before {
+        background-image: url("../img/ico-assistant.svg");
+      }
+    }
+    .sidenav-item-rrf {
+      &:before {
+        background-image: url("../img/ico-globe.svg");
+      }
+    }
+  }
+}
