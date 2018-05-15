@@ -26,7 +26,7 @@ $container-padding: 25px;
     }
     @include sidenav();
   }
-  &.active {
+  &.close {
     .main-top-nav {
       .menu-button {
         background-image: url('../img/ico-menu.svg');
@@ -46,6 +46,13 @@ $container-padding: 25px;
         width: calc(100% - #{55px + $main-space + $container-padding*2});
         @include ease-multi(width 0.3s, left 0.3s);
         left: 55px;
+      }
+    }
+    .sidenav {
+      .sidenav-submenu.open {
+        max-height: 0;
+        overflow: hidden;
+        @include ease(max-height);
       }
     }
   }
