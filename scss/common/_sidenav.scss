@@ -1,7 +1,6 @@
 @mixin sidenav {
   .sidenav {
     font-family: RenaultLife;
-    float: left;
     width: $sidebar-width;
     @include ease(width);
     position: absolute;

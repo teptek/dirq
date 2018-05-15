@@ -7,8 +7,10 @@ $container-padding: 25px;
 #theme-a {
   background-color: $cloud-blue;
   display: table;
+  width: 100%;
   .content {
     display: table;
+    width: 100%;
     .container {
       position: relative;
       top: -60px;
@@ -17,10 +19,10 @@ $container-padding: 25px;
       padding: 15px #{$container-padding};
       margin: $main-space;
       width: calc(100% - #{$sidebar-width + $main-space*2 + $container-padding*2});
-      float: right;
       box-shadow: $box-shadow;
-      @include ease(width);
+      @include ease-multi(width 0.3s, left 0.3s);
       margin-bottom: -45px;
+      left: 200px;
     }
     @include sidenav();
   }
@@ -42,7 +44,8 @@ $container-padding: 25px;
       .container {
         margin-left: 0;
         width: calc(100% - #{55px + $main-space + $container-padding*2});
-        @include ease(width);
+        @include ease-multi(width 0.3s, left 0.3s);
+        left: 55px;
       }
     }
   }
