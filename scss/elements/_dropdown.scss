@@ -5,6 +5,7 @@
   display: table;
   font-size: 12px;
   padding-top: 10px;
+  min-width: 120px;
   @include border-radius(3px);
   .dropdown-item {
     font-family: RenaultLife;

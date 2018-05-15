@@ -25,10 +25,12 @@ $container-padding: 25px;
     @include sidenav();
   }
   &.active {
-    .menu-button {
-      background-image: url('../img/ico-menu.svg');
-      color: transparent;
-      @include ease(color);
+    .main-top-nav {
+      .menu-button {
+        background-image: url('../img/ico-menu.svg');
+        color: transparent;
+        @include ease(color);
+      }
     }
     .content {
       .sidenav {
@@ -44,71 +46,86 @@ $container-padding: 25px;
       }
     }
   }
-}
-
-.main-top-nav {
-  background-color: white;
-  width: calc(100% - #{$main-space}*2);
-  display: table;
-  border-bottom: 1px solid $ultra-light-grey;
-  padding: 14px #{$main-space} 11px;
-  .main-logo {
-    background-image: url('../img/logo-a.svg');
-    width: 139px;
-    height: 41px;
-    display: block;
-    float: left;
-  }
-  .top-nav-settings {
-    cursor: pointer;
-    float: right;
-    text-align: right;
-    background-image: url('../img/settings-ico.svg');
-    background-repeat: no-repeat;
-    background-position: right center;
-    padding-right: 50px;
-    line-height: 0;
-    span[class*="country-flag-"] {
-      -webkit-border-radius: 2px;
-      -moz-border-radius: 2px;
-      border-radius: 2px;
-      width: 15px;
-      background-size: 15px;
-      background-position: center;
-      top: 5px;
-      position: relative;
-      margin-left: 5px;
+  .main-top-nav {
+    background-color: white;
+    width: calc(100% - #{$main-space}*2);
+    display: table;
+    border-bottom: 1px solid $ultra-light-grey;
+    padding: 14px #{$main-space} 11px;
+    position: relative;
+    .main-logo {
+      background-image: url('../img/logo-a.svg');
+      width: 139px;
+      height: 41px;
+      display: block;
+      float: left;
     }
-    strong {
-      color: $dark-grey;
-      font-size: 11px;
-      display: inline-block;
+    .top-nav-settings {
+      cursor: pointer;
+      float: right;
+      text-align: right;
+      background-image: url('../img/settings-ico.svg');
+      background-repeat: no-repeat;
+      background-position: right center;
+      padding-right: 50px;
+      line-height: 0;
+      span[class*="country-flag-"] {
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        width: 15px;
+        background-size: 15px;
+        background-position: center;
+        top: 5px;
+        position: relative;
+        margin-left: 5px;
+      }
+      strong {
+        color: $dark-grey;
+        font-size: 11px;
+        display: inline-block;
+      }
+      h4 {
+        font-size: 14px;
+        color: $dark-grey-blue;
+        margin: 14px 0 0 0;
+      }
+      &:hover, &:focus {
+        opacity: 0.7;
+      }
     }
-    h4 {
-      font-size: 14px;
-      color: $dark-grey-blue;
-      margin: 14px 0 0 0;
-    }
-  }
-  .menu-button {
-    @include ease(color);
-    color: $dark-grey-blue;
-    clear: both;
-    float: left;
-    left: 0;
-    font-size: 10px;
-    background-image: url('../img/ico-arrow-left.svg');
-    background-repeat: no-repeat;
-    background-position: top 5px left;
-    padding-left: 18px;
-    margin-top: 35px;
-    opacity: 0.4;
-    margin-left: 7px;
-    @include ease(opacity);
-    &:focus, &:hover {
-      opacity: 1;
-      @include ease(opacity);
+    .menu-button {
       @include ease(color);
+      color: $dark-grey-blue;
+      clear: both;
+      float: left;
+      left: 0;
+      font-size: 10px;
+      background-image: url('../img/ico-arrow-left.svg');
+      background-repeat: no-repeat;
+      background-position: top 5px left;
+      padding-left: 18px;
+      margin-top: 35px;
+      opacity: 0.4;
+      margin-left: 7px;
+      @include ease(opacity);
+      &:focus, &:hover {
+        opacity: 1;
+        @include ease(opacity);
+        @include ease(color);
+      }
+    }
+    .dropdown {
+      position: absolute;
+      z-index: 1;
+      right: 10px;
+      top: 65px;
+      display: none;
+    }
+    &.active {
+      .dropdown {
+        display: block;
+      }
     }
   }
 }
