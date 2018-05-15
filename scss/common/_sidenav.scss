@@ -24,8 +24,13 @@
         position: relative;
         margin-right: 15px;
       }
-      &.active, &:focus, &:hover {
+      &.active {
         border-left: 3px solid $dark-grey-blue;
+        opacity: 1;
+        @include ease(opacity);
+      }
+      &:hover, &:focus {
+        border-left: 3px solid transparent;
         opacity: 1;
         @include ease(opacity);
       }
