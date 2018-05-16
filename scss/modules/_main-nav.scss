@@ -43,7 +43,7 @@ $container-padding: 25px;
       }
       .container {
         margin-left: 0;
-        width: calc(100% - #{55px + $main-space + $container-padding*2});
+        width: calc(100% - #{55px + $main-space});
         @include ease-multi(width 0.3s, left 0.3s);
         left: 55px;
       }
