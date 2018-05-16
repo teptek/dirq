@@ -113,6 +113,12 @@ a, button {
   cursor: pointer;
 }
 
+p {
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 ul {
   padding-left: 0;
   li {

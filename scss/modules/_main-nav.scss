@@ -16,9 +16,9 @@ $container-padding: 25px;
       top: -60px;
       @include border-radius(6px);
       background-color: white;
-      padding: 15px #{$container-padding};
+      padding: $container-padding;
       margin: $main-space;
-      width: calc(100% - #{$sidebar-width + $main-space*2 + $container-padding*2});
+      width: calc(100% - #{$sidebar-width + $main-space*2});
       box-shadow: $box-shadow;
       @include ease-multi(width 0.3s, left 0.3s);
       margin-bottom: -45px;
@@ -26,7 +26,7 @@ $container-padding: 25px;
     }
     @include sidenav();
   }
-  &.close {
+  &.closed {
     .main-top-nav {
       .menu-button {
         background-image: url('../img/ico-menu.svg');
@@ -58,7 +58,7 @@ $container-padding: 25px;
   }
   .main-top-nav {
     background-color: white;
-    width: calc(100% - #{$main-space}*2);
+    width: 100%;
     display: table;
     border-bottom: 1px solid $ultra-light-grey;
     padding: 14px #{$main-space} 11px;
@@ -98,7 +98,9 @@ $container-padding: 25px;
       h4 {
         font-size: 14px;
         color: $dark-grey-blue;
-        margin: 14px 0 0 0;
+        margin: 0;
+        line-height: 0;
+        margin-top: 12px;
       }
       &:hover, &:focus {
         opacity: 0.7;
