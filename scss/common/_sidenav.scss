@@ -76,7 +76,14 @@
           @include ease(opacity);
         }
       }
-      &.open {
+    }
+    .open {
+      .sidenav-item.sidenav-item-sub {
+        &:after {
+          background-image: url('../img/ico-expand-on.svg');
+        }
+      }
+      .sidenav-submenu {
         max-height: 600px;
         @include ease(max-height);
       }
