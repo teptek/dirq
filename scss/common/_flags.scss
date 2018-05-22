@@ -28,3 +28,35 @@
 .country-flag-ro {
   @include country-flag(RO);
 }
+
+.country-flag-ar {
+  @include country-flag(AR);
+}
+
+.country-flag-br {
+  @include country-flag(BR);
+}
+
+.country-flag-co {
+  @include country-flag(CO);
+}
+
+.country-flag-in {
+  @include country-flag(IN);
+}
+
+.country-flag-ir {
+  @include country-flag(IR);
+}
+
+.country-flag-kr {
+  @include country-flag(KR);
+}
+
+.country-flag-ru {
+  @include country-flag(RU);
+}
+
+.country-flag-tr {
+  @include country-flag(TR);
+}
