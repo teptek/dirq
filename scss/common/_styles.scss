@@ -92,7 +92,7 @@
 
 body {
   font-family: Read;
-  font-size: 14px;
+  font-size: $font-size;
   color: #000000;
   letter-spacing: 0;
   line-height: 20px;
@@ -162,11 +162,18 @@ ul {
 
 .rlabel {
   padding-bottom: 5px;
+  padding-left: 2px;
   display: block;
+  font-size: 12px;
+  margin-bottom: 0;
 }
 
 blockquote {
   border-left: 2px solid $sun-yellow;
   padding: 15px;
   margin: 0;
+}
+
+hr {
+  border-top: medium none;
 }

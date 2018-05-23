@@ -1,10 +1,11 @@
 /* scss/modules/_tableA.scss */
 
-table {
+table:not(.catalog-awit0i-Table-Table) {
   background-color: white;
   width: 100%;
   border-spacing: 0;
   border-collapse: inherit;
+  font-size: $font-title;
   tr {
     display: table;
     width: 100%;

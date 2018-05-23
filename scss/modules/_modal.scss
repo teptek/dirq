@@ -2,12 +2,14 @@
   .modal-content {
     @include border-radius(6px);
     position: relative;
+    display: table;
     width: 500px;
     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.25);
     padding: 0;
     border: medium none;
+    min-height: 200px;
     .modal-header {
-      padding: 15px;
+      padding: 15px 20px;
       .col-md-6 {
         padding: 0;
       }
@@ -35,7 +37,6 @@
           font-size: 12px;
           color: $dark-grey-blue;
           margin-bottom: 0;
-          line-height: 0;
         }
         strong {
           font-size: 12px;
@@ -47,26 +48,64 @@
           -moz-border-radius: 2px;
           border-radius: 2px;
           width: 15px;
+          height: 10px;
           background-size: 15px;
           background-position: center;
-          top: 5px;
           position: relative;
           margin-left: 5px;
         }
       }
     }
+    .modal-body {
+      padding: 25px 20px;
+      display: table;
+      div[class*="col-md-"] {
+        padding: 0;
+      }
+    }
     .modal-footer {
       font-weight: 500;
-      margin: 0 15px 15px;
-      padding: 15px 3px 0;
+      font-size: $font-title;
+      width: calc(100% - 40px);
+      margin: 0 20px;
+      padding: 15px 2px;
       .col-md-6 {
         padding: 0;
         margin: 0;
       }
       .modal-back {}
+      .modal-back-arrow {
+        opacity: 0.3;
+        &:hover, &:focus {
+          opacity: 0.4;
+        }
+        a:before {
+          content: '';
+          background-image: url('../img/ico-arrow-left.svg');
+          background-repeat: no-repeat;
+          width: 12px;
+          height: 10px;
+          display: inline-block;
+          text-align: right;
+          margin-right: 8px;
+        }
+      }
       .modal-next {
         color: $light-blue;
         text-align: right;
+        &:hover, &:focus {
+          opacity: 0.75;
+        }
+        a:after {
+          content: '';
+          background-image: url('../img/ico-arrow-right-blue.svg');
+          background-repeat: no-repeat;
+          width: 12px;
+          height: 10px;
+          display: inline-block;
+          text-align: right;
+          margin-left: 8px;
+        }
       }
     }
   }

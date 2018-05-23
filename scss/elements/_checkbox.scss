@@ -1,7 +1,6 @@
 .checkbox {
   display: table;
   cursor: pointer;
-  padding-bottom: 25px;
   position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -30,9 +29,6 @@
   }
 
   &.read-only-checked {
-    font-weight: 500;
-    font-style: italic;
-    color: $light-blue;
     cursor: default;
     .checkmark {
       border-color: $light-blue;

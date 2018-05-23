@@ -10,3 +10,40 @@
     background-image: url('../img/ico-validation.svg');
   }
 }
+
+@mixin icon($icon) {
+  .ico-#{$icon} {
+    background-image: url('../img/ico-#{$icon}.svg');
+    height: 18px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+@include icon(trash);
+
+
+@mixin button-icon($icon) {
+  &.button-ico-#{$icon} {
+    padding-left: 12px;
+    &:before {
+      background-image: url('../img/ico-#{$icon}.svg');
+      height: 12px;
+      width: 12px;
+      content: '';
+      display: inline-block;
+      background-size: 12px;
+      position: relative;
+      top: 1px;
+      margin-right: 8px;
+    }
+  }
+}
+
+div, span, button, a {
+  @include button-icon(plus-white);
+  &[class*="-small"] {
+    padding-left: 8px;
+    top: 1px;
+  }
+}

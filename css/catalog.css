@@ -16,3 +16,17 @@ div.catalog-14mvqx7-Html-Html {
     margin-bottom: 2.9em;
     text-align: center;
 }
+
+.catalog-dc5dse-AppLayout-AppLayout, .catalog-o5tzde-source-source, .catalog-15o9zei-NavigationBar-NavigationBar {
+    font-size: 14px;
+}
+
+div.catalog-4g86b3-Page-Page {
+    max-width: 75%;
+}
+
+@media screen and (max-width: 1300px) {
+    div.catalog-4g86b3-Page-Page {
+        max-width: 100%;
+    }
+}

@@ -23,6 +23,9 @@
 
 button {
   border: medium none;
+  &:hover, &:focus {
+    outline: medium none;
+  }
 }
 
 .button-ghost-grey {
@@ -76,4 +79,37 @@ button {
   &:hover, &:focus {
     background-color: lighten( $sun-yellow, 20% );
   }
+}
+
+.button-blue {
+  @include button;
+  color: white;
+  background-color: $light-blue;
+  &:hover, &:focus {
+    background-color: lighten($light-blue, 5%);
+  }
+}
+
+.button-yellow-small {
+  @extend .button-yellow;
+  height: 30px;
+  padding: 0 10px;
+}
+
+.button-blue-small {
+  @extend .button-blue;
+  height: 30px;
+  padding: 0 10px;
+}
+
+.button-grey-small {
+  @extend .button-grey;
+  height: 30px;
+  padding: 0 10px;
+}
+
+.button-off-small {
+  @extend .button-off;
+  height: 30px;
+  padding: 0 10px;
 }

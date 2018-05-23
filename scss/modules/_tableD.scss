@@ -1,0 +1,9 @@
+table.table-d {
+  background-color: $dark;
+  label {
+    color: white;
+  }
+  .checkbox input[type="checkbox"] {
+    margin-right: 15px;
+  }
+}
