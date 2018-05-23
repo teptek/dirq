@@ -17,10 +17,12 @@
     height: 18px;
     background-size: 100%;
     background-repeat: no-repeat;
+    background-color: transparent;
   }
 }
 
 @include icon(trash);
+@include icon(arrow-left-white);
 
 
 @mixin button-icon($icon) {

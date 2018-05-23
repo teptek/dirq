@@ -1,6 +1,10 @@
-.modal-dialog-options {
+::-webkit-scrollbar-thumb {
+  width: 8px;
+  //background: rgb(111,111,111);
+}
+.modal-dialog {
   max-width: 800px;
-  .modal-content {
+  .modal-content-options {
     width: 800px;
     .modal-content-main {
       float: left;;
@@ -17,6 +21,52 @@
       right: 0;
       color: white;
       padding: 20px;
+    }
+    .table-add {
+      .ico-arrow-left-white {
+        float: left;
+        margin-top: 13px;
+      }
+      .table-add-head {
+        .search-user {
+          margin-bottom: 25px;
+          width: calc(100% - 18px);
+          float: right;
+        }
+      }
+      .table-add-content {
+        overflow-y: scroll;
+        height: calc(100% - 164px);
+        bottom: 0;
+        position: absolute;
+        top: 84px;
+        width: calc(100% - 40px);
+        right: 20px;
+        &::-webkit-scrollbar {
+          width: 10px;
+        }
+        &::-webkit-scrollbar-thumb {
+          @include border-radius(10px);
+          background-color: #5F6371;
+        }
+        &::-webkit-scrollbar-track {
+          //background-color: #000;
+        }
+      }
+      .table-add-footer {
+        @include border-radius(0 0 6px 0);
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        left: 0;
+        padding: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        background-color: $dark;
+        button {
+          width: 100%;
+        }
+      }
     }
   }
   .pagination {
