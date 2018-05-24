@@ -1,11 +1,11 @@
 @import "common/_mixins";
 @import "common/_variables";
-@import "common/styles";
+@import "common/_styles";
 @import "common/_flags";
 @import "common/_icons";
 
 
 
 @import "elements/_elements";
-@import "modules/_modules";
-
+@import "patterns/_patterns";
+@import "templates/_templates";

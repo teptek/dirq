@@ -24,6 +24,42 @@
 @include icon(trash);
 @include icon(arrow-left-white);
 
+@mixin icon-tag($icon) {
+  .ico-tag-#{$icon} {
+    background-image: url('../img/tag/#{$icon}.svg');
+    height: 16px;
+    width: 19px;
+    display: inline-block;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+  }
+}
+
+//@include icon-tag(black);
+@include icon-tag(blue);
+@include icon-tag(green);
+@include icon-tag(orange);
+@include icon-tag(turk);
+//@include icon-tag(yellow);
+
+span[class*="ico-tag-"] {
+  width: 16px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  height: 19px;
+  display: inline-block;
+}
+
+.ico-tag-yellow {
+  background-image: url('../img/tag/yellow.svg');
+}
+
+.ico-tag-black {
+  background-image: url('../img/tag/black.svg');
+}
+
 
 @mixin button-icon($icon) {
   &.button-ico-#{$icon} {
