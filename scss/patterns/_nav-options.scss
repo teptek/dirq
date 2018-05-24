@@ -28,6 +28,18 @@
           color: $light-blue;
           font-weight: 500;
         }
+        &.nav-options-link {
+          background-image: url('../img/ico-arrow-right-lg-blue.svg');
+        }
+      }
+      &.nav-options-link {
+        background-image: url('../img/ico-arrow-right-lg-black.svg');
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center right;
+      }
+      &.nav-options-link-off {
+        background-image: url('../img/ico-arrow-right-lg-grey.svg');
       }
     }
   }
