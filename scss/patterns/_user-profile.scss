@@ -4,15 +4,13 @@
   &:hover, &:focus {
     opacity: 0.75;
   }
-  span {
-    &[class*="ico-"] {
-      height: 20px;
-      width: 18px;
-      display: inline-block;
-      position: relative;
-      vertical-align: middle;
-      margin-right: 10px;
-    }
+  [class*="ico-"] {
+    height: 20px;
+    width: 18px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-right: 10px;
   }
 }
 
