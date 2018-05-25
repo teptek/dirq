@@ -17,7 +17,7 @@
     border-color: transparent;
     font-style: italic;
   }
-  button {
+  .search-button {
     cursor: pointer;
     float: right;
     height: 40px;
@@ -28,5 +28,12 @@
     box-shadow:none;
     border-color:transparent;
     background-size: auto;
+  }
+  button {
+    border: medium none;
+    padding: 0;
+    text-align: right;
+    float: right;
+    margin-top: 10px;
   }
 }
