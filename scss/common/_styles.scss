@@ -177,3 +177,12 @@ blockquote {
 hr {
   border-top: medium none;
 }
+
+.rounded-icon {
+  background-color: #F5F9FE;
+  height: 45px;
+  width: 45px;
+  @include border-radius(45px);
+  padding-top: 14px;
+  margin: 0 auto 10px;
+}

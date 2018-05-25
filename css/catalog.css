@@ -6,6 +6,10 @@ div.catalog-14mvqx7-Html-Html {
     display: none;
 }
 
+.catalog-1mbo59e-_ColorPaletteItem-_ColorPaletteItem {
+    font-size: 14px;
+}
+
 h1.catalog-ohyl74-Menu-Menu {
     background-image: url('../img/renault.svg');
     background-repeat: no-repeat;
@@ -24,6 +28,14 @@ h1.catalog-ohyl74-Menu-Menu {
 
 div.catalog-4g86b3-Page-Page {
     max-width: 75%;
+}
+
+.catalog-17xphrn-HighlightedCode-HighlightedCode {
+    font-size: 12px;
+}
+
+.catalog-7qbo-Link-Link {
+    font-size: 14px;
 }
 
 @media screen and (max-width: 1300px) {

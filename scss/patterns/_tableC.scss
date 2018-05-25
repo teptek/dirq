@@ -3,6 +3,7 @@ table.table-c {
     opacity: 0.15;
     height: 14px;
     background-size: 11px;
+    display: inherit;
     &:hover, &:focus {
       opacity: 0.25;
       outline: none;
