@@ -1,0 +1,10 @@
+.logout {
+  text-align: center;
+  .logo-monochrome {
+    @include image(logo-monochrome-grey, 247px, 75px);
+    margin: 0 auto 25px;
+  }
+  p {
+    font-size: $font-title;
+  }
+}

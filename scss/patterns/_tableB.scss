@@ -2,17 +2,21 @@
 
 .table-b {
   .table-color-tag {
-    width: 25%;
+    width: 30%;
+    font-size: $font-title;
   }
   .table-two-lines {
     width: 25%;
     & > a {
-      font-size: 16px;
+      font-size: $font-title;
       color: $light-blue;
     }
     & > .light-text {
       font-size: 12px;
     }
+  }
+  .table-flag {
+    width: 200px;
   }
   td:last-child {
     text-align: right;

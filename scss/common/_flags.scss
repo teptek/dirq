@@ -1,8 +1,10 @@
 @mixin country-flag ($country-code) {
   background: url('../flags/#{$country-code}.svg') no-repeat;
-  width: 28px;
+  width: 24px;
   height: 20px;
   display: inline-block;
+  background-size: 100%;
+  background-position: center center;
 }
 
 .country-flag-fr {

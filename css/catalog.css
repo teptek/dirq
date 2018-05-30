@@ -38,6 +38,11 @@ div.catalog-4g86b3-Page-Page {
     font-size: 14px;
 }
 
+.modal {
+    display: block;
+    position: relative;
+}
+
 @media screen and (max-width: 1300px) {
     div.catalog-4g86b3-Page-Page {
         max-width: 100%;

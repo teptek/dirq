@@ -19,3 +19,11 @@
   -moz-border-radius: $radius;
   border-radius: $radius;
 }
+
+@mixin image ($image, $width, $height) {
+  background-image: url('../img/#{$image}.svg');
+  background-repeat: no-repeat;
+  display: block;
+  width: $width;
+  height: $height;
+}

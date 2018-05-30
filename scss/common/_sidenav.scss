@@ -60,10 +60,11 @@
       overflow: hidden;
       @include ease(max-height);
       .sidenav-submenu-item {
+        font-family: Read;
         color: $dark-grey-blue;
         opacity: 0.5;
         font-size: 12px;
-        font-weight: 700;
+        font-weight: 500;
         margin-left: 55px;
         @include ease(opacity);
         &:first-child {
