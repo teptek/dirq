@@ -18,13 +18,13 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  font-size: $font-size;
+  font-size: $font-input;
   margin-bottom: 25px;
   font-weight: 600;
   color: black;
   option {
     padding: 0;
-    font-weight: 600;
+    font-weight: 500;
     color: black;
     &.select-placeholder {
       font-weight: 300;

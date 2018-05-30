@@ -18,6 +18,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: transparent;
+    background-position: center center;
     display: block;
   }
 }
@@ -26,6 +27,7 @@
 @include icon(arrow-left-white);
 @include icon(off-red);
 @include icon(toggle-blue);
+@include icon(time-blue);
 
 @mixin icon-tag($icon) {
   .ico-tag-#{$icon} {

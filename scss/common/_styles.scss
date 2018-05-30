@@ -100,7 +100,7 @@ body {
 }
 
 a {
-  color: $light-blue;
+  color: $blue;
   font-weight: 500;
   text-decoration: none;
   &:hover, &:focus {
@@ -114,6 +114,7 @@ a, button {
 }
 
 p {
+  color: $dark-grey-blue;
   &:last-child {
     margin-bottom: 0;
   }
@@ -160,18 +161,18 @@ ul {
   }
 }
 
-.label {
+.label, .rlabel, label {
   font-size: $font-sm;
   text-transform: uppercase;
   color: $grey-blue;
   font-weight: 500;
+  letter-spacing: 0.03em;
 }
 
 .rlabel {
   padding-bottom: 5px;
   padding-left: 2px;
   display: block;
-  font-size: $font-size;
   margin-bottom: 0;
 }
 

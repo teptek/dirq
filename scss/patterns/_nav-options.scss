@@ -3,7 +3,7 @@
     margin-left: 16px;
     margin-bottom: 25px;
     h4 {
-      font-size: $font-title;
+      font-size: $font-size;
       display: inline-block;
       margin: 0;
       top: -5px;
@@ -18,14 +18,15 @@
       cursor: pointer;
       .checkbox {
         margin: 0;
+        font-size: $font-input;
         input[type="checkbox"] {
           margin-right: 16px;
         }
       }
       &.active {
-        border-left: 3px solid $light-blue;
+        border-left: 3px solid $blue;
         label {
-          color: $light-blue;
+          color: $blue;
           font-weight: 500;
         }
         &.nav-options-link {

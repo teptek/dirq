@@ -6,7 +6,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-
+  font-size: $font-size;
   &:last-child {
     padding-bottom: 0;
   }
@@ -20,8 +20,8 @@
     cursor: default;
     margin-right: 10px;
     &:checked ~ .checkmark {
-      background-color: $light-blue;
-      border: 1px solid $light-blue;
+      background-color: $blue;
+      border: 1px solid $blue;
     }
     &:checked ~ .checkmark:after {
       display: block;
@@ -31,7 +31,7 @@
   &.read-only-checked {
     cursor: default;
     .checkmark {
-      border-color: $light-blue;
+      border-color: $blue;
       opacity: 0.5;
       cursor: default;
     }
@@ -70,4 +70,8 @@
       transform: rotate(45deg);
     }
   }
+}
+
+label.checkbox {
+  text-transform: inherit;
 }

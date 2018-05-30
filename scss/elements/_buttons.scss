@@ -3,8 +3,7 @@
 @mixin button {
   @include border-radius(3px);
   font-family: Read;
-  font-size: 12px;
-  font-weight: 500;
+  @include font-input;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
@@ -84,9 +83,18 @@ button {
 .button-blue {
   @include button;
   color: white;
-  background-color: $light-blue;
+  background-color: $blue;
   &:hover, &:focus {
-    background-color: lighten($light-blue, 5%);
+    background-color: lighten($blue, 5%);
+  }
+}
+
+.button-blue-light {
+  @include button;
+  color: $blue;
+  background-color: lighten($blue, 55%);
+  &:hover, &:focus {
+    background-color: lighten($blue, 50%);
   }
 }
 
@@ -98,6 +106,12 @@ button {
 
 .button-blue-small {
   @extend .button-blue;
+  height: 30px;
+  padding: 0 10px;
+}
+
+.button-blue-light-small {
+  @extend .button-blue-light;
   height: 30px;
   padding: 0 10px;
 }

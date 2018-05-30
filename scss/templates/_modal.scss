@@ -20,13 +20,6 @@
       .col-md-6 {
         padding: 0;
       }
-      .modal-subtitle {
-        display: block;
-        font-size: 10px;
-        text-transform: uppercase;
-        color: $blue-grey;
-        font-weight: 500;
-      }
       h4 {
         display:  block;
         font-size: 16px;
@@ -67,22 +60,28 @@
       padding: 25px 20px;
       display: table;
       min-height: 270px;
+      width: 100%;
       div[class*="col-md-"] {
         padding: 0;
       }
     }
     .modal-footer {
       font-weight: 500;
-      font-size: $font-title;
+      @include font-input;
       width: calc(100% - 40px);
       margin: 0 20px;
       padding: 0 2px;
       height: 70px;
+      a {
+        font-size: $font-size;
+      }
       .col-md-6 {
         padding: 0;
         margin: 0;
       }
-      .modal-back {}
+      .modal-back {
+        font-size: $font-size;
+      }
       .modal-back-arrow {
         opacity: 0.3;
         &:hover, &:focus {
@@ -102,6 +101,7 @@
       .modal-next {
         color: $light-blue;
         text-align: right;
+        font-size: $font-size;
         &:hover, &:focus {
           opacity: 0.75;
         }

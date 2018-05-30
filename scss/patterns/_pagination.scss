@@ -8,6 +8,7 @@
     cursor: pointer;
     border-bottom: 3px solid transparent;
     font-weight: 500;
+    font-size: $font-input;
     &.active, &:hover, &:focus {
       border-bottom: 3px solid $sun-yellow;
       color: #000000;

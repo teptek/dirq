@@ -3,13 +3,13 @@
 .table-b {
   .table-color-tag {
     width: 30%;
-    font-size: $font-title;
+    font-size: $font-input;
   }
   .table-two-lines {
     width: 25%;
     & > a {
-      font-size: $font-title;
-      color: $light-blue;
+      font-size: $font-input;
+      color: $blue;
     }
     & > .light-text {
       font-size: 12px;
