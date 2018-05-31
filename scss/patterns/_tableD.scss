@@ -35,6 +35,7 @@ table.table-d {
     }
   }
   label {
+    font-size: $font-input;
     &:hover, &:focus {
       opacity: 0.75;
     }

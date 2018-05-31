@@ -1,14 +1,15 @@
 /* scss/modules/_tableB.scss */
 
 .table-b {
+  font-size: $font-input;
   .table-color-tag {
     width: 30%;
-    font-size: $font-input;
+    font-size: $font-size;
   }
   .table-two-lines {
     width: 25%;
     & > a {
-      font-size: $font-input;
+      font-size: $font-size;
       color: $blue;
     }
     & > .light-text {

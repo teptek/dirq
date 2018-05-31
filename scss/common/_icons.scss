@@ -28,6 +28,7 @@
 @include icon(off-red);
 @include icon(toggle-blue);
 @include icon(time-blue);
+@include icon(time-blue-b);
 
 @mixin icon-tag($icon) {
   .ico-tag-#{$icon} {
