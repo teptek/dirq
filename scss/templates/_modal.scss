@@ -17,6 +17,9 @@
     }
     .modal-header {
       padding: 15px 20px;
+      .modal-subtitle {
+        @extend .label;
+      }
       .col-md-6 {
         padding: 0;
       }
@@ -24,11 +27,6 @@
         display:  block;
         font-size: 16px;
         line-height: 1;
-      }
-      button {
-        span {
-
-        }
       }
       .modal-user {
         margin-top: 10px;
@@ -81,39 +79,24 @@
       }
       .modal-back {
         font-size: $font-size;
-      }
-      .modal-back-arrow {
-        opacity: 0.3;
-        &:hover, &:focus {
-          opacity: 0.4;
-        }
-        a:before {
-          content: '';
-          background-image: url('../img/ico-arrow-left.svg');
-          background-repeat: no-repeat;
-          width: 12px;
-          height: 10px;
-          display: inline-block;
-          text-align: right;
-          margin-right: 8px;
+        i {
+          font-size: 1.2em;
+          position: relative;
+          margin-right: 7px;
         }
       }
       .modal-next {
+        font-size: $font-size;
         color: $light-blue;
         text-align: right;
-        font-size: $font-size;
         &:hover, &:focus {
           opacity: 0.75;
         }
-        a:after {
-          content: '';
-          background-image: url('../img/ico-arrow-right-blue.svg');
-          background-repeat: no-repeat;
-          width: 12px;
-          height: 10px;
-          display: inline-block;
-          text-align: right;
-          margin-left: 8px;
+        i {
+          font-size: 1.2em;
+          top: 3px;
+          position: relative;
+          margin-left: 9px;
         }
       }
     }

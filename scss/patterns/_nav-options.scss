@@ -23,24 +23,25 @@
           margin-right: 16px;
         }
       }
+      label{
+        width: 100%;
+        i[class*="ico-"] {
+          font-size: 18px;
+          top: 2px;
+          position: relative;
+          float: right;
+          opacity: 0.2;
+        }
+      }
       &.active {
         border-left: 3px solid $blue;
         label {
           color: $blue;
           font-weight: 500;
+          i[class*="ico-"] {
+            opacity: 1;
+          }
         }
-        &.nav-options-link {
-          background-image: url('../img/ico-arrow-right-lg-blue.svg');
-        }
-      }
-      &.nav-options-link {
-        background-image: url('../img/ico-arrow-right-lg-black.svg');
-        display: block;
-        background-repeat: no-repeat;
-        background-position: center right;
-      }
-      &.nav-options-link-off {
-        background-image: url('../img/ico-arrow-right-lg-grey.svg');
       }
     }
   }

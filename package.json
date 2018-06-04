@@ -15,5 +15,9 @@
     "url": "https://github.com/teptek/dirq/issues"
   },
   "homepage": "https://github.com/teptek/dirq#readme",
-  "main": "index.js"
+  "main": "index.js",
+  "devDependencies": {},
+  "dependencies": {
+    "dcs-icon-font": "^3.0.1"
+  }
 }

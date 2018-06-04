@@ -8,7 +8,7 @@
     width: 800px;
     @include ease(width);
     margin: 0 auto;
-    .modal-next {
+    .modal-next, .modal-back {
       opacity: 0.5;
       a, button {
         cursor: not-allowed;
@@ -38,13 +38,29 @@
   .table-add {
     .ico-arrow-left-white {
       float: left;
-      margin-top: 13px;
+      margin-top: 9px;
     }
     .table-add-head {
+      & > button {
+        background-color: transparent;
+        padding: 0;
+        top: 9px;
+        position: relative;
+        left: -2px;
+        & > i {
+          font-size: 18px;
+        }
+      }
       .search-user {
         margin-bottom: 25px;
-        width: calc(100% - 18px);
+        width: calc(100% - 24px);
         float: right;
+        button {
+          background-color: transparent;
+          & > i {
+            font-size: 17px;
+          }
+        }
       }
     }
     .table-add-content {

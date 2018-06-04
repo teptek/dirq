@@ -1,12 +1,10 @@
 table.table-c {
   .ico-trash {
-    opacity: 0.15;
-    height: 14px;
-    background-size: 11px;
-    display: inherit;
+    font-size: 17px;
+    opacity: 0.2;
     &:hover, &:focus {
-      opacity: 0.25;
-      outline: none;
+      color: $red;
+      opacity: 1;
     }
   }
   h4 {

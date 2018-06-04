@@ -25,6 +25,20 @@ button {
   &:hover, &:focus {
     outline: medium none;
   }
+  & > i[class*="ico-"] {
+    font-size: 18px;
+    position: relative;
+    left: -5px;
+    padding-right: 5px;
+  }
+  &[class*="-small"] {
+    & > i[class*="ico-"] {
+      font-size: 15px;
+      position: relative;
+      left: -3px;
+      padding-right: 5px;
+    }
+  }
 }
 
 .button-ghost-grey {

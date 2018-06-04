@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "icons";
+    src: url("./icons.eot?877605a3411af7fbbe5343125727771b?#iefix") format("embedded-opentype"),
+url("./icons.woff2?877605a3411af7fbbe5343125727771b") format("woff2"),
+url("./icons.woff?877605a3411af7fbbe5343125727771b") format("woff"),
+url("./icons.ttf?877605a3411af7fbbe5343125727771b") format("truetype"),
+url("./icons.svg?877605a3411af7fbbe5343125727771b#icons") format("svg");
+}
+
+i {
+    line-height: 1;
+}
+
+i[class^="ico-"]:before, i[class*=" ico-"]:before {
+    font-family: icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-admin:before {
+    content: "\f101";
+}
+.ico-arrow-left:before {
+    content: "\f102";
+}
+.ico-arrow-rd-left:before {
+    content: "\f103";
+}
+.ico-arrow-rd-right:before {
+    content: "\f104";
+}
+.ico-arrow-right:before {
+    content: "\f105";
+}
+.ico-assistant:before {
+    content: "\f106";
+}
+.ico-dashboard:before {
+    content: "\f107";
+}
+.ico-expand-off:before {
+    content: "\f108";
+}
+.ico-expand-on:before {
+    content: "\f109";
+}
+.ico-globe:before {
+    content: "\f10a";
+}
+.ico-ico-arrow-rd-left:before {
+    content: "\f10b";
+}
+.ico-ico-arrow-rd-right:before {
+    content: "\f10c";
+}
+.ico-logo-a:before {
+    content: "\f10d";
+}
+.ico-logo-app:before {
+    content: "\f10e";
+}
+.ico-logo-monochrome-grey:before {
+    content: "\f10f";
+}
+.ico-logo.dirq:before {
+    content: "\f110";
+}
+.ico-menu:before {
+    content: "\f111";
+}
+.ico-more:before {
+    content: "\f112";
+}
+.ico-off:before {
+    content: "\f113";
+}
+.ico-plus:before {
+    content: "\f114";
+}
+.ico-renault:before {
+    content: "\f115";
+}
+.ico-search-rd:before {
+    content: "\f116";
+}
+.ico-search:before {
+    content: "\f117";
+}
+.ico-select:before {
+    content: "\f118";
+}
+.ico-settings:before {
+    content: "\f119";
+}
+.ico-time:before {
+    content: "\f11a";
+}
+.ico-toggle:before {
+    content: "\f11b";
+}
+.ico-trash:before {
+    content: "\f11c";
+}
+.ico-validation:before {
+    content: "\f11d";
+}

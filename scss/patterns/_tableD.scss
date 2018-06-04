@@ -31,7 +31,10 @@ table.table-d {
       color: white;
     }
     button {
-      background-image: url('../img/ico-search-white.svg');
+      background-color: transparent;
+      & > i[class*="ico-"] {
+        left: 0;
+      }
     }
   }
   label {

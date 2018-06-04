@@ -1,0 +1,43 @@
+i[class*="ico-"] {
+  font-size: 24px;
+}
+
+.ico-blue {
+  color: $blue;
+}
+
+.ico-dark-blue {
+  color: $dark-grey-blue;
+}
+
+.ico-red {
+  color: $red;
+}
+
+.ico-white {
+  color: #FFFFFF;
+}
+
+.ico-grey {
+  color: $light-grey;
+}
+
+.ico-green {
+  color: $green;
+}
+
+.ico-bg {
+  height: 70px;
+  width: 70px;
+  background-color: lighten($grey, 15%);
+  @include border-radius(70px);
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  & > i[class*=ico] {
+    margin: 0 auto;
+    display: table;
+    padding-top: 25px;
+    font-size: 22px;
+  }
+}
