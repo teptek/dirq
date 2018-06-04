@@ -24,8 +24,9 @@
     "search": "\\f117",
     "select": "\\f118",
     "settings": "\\f119",
-    "time": "\\f11a",
-    "toggle": "\\f11b",
-    "trash": "\\f11c",
-    "validation": "\\f11d"
+    "tag": "\\f11a",
+    "time": "\\f11b",
+    "toggle": "\\f11c",
+    "trash": "\\f11d",
+    "validation": "\\f11e"
 }

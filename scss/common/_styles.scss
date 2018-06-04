@@ -194,3 +194,10 @@ hr {
   padding-top: 14px;
   margin: 0 auto 10px;
 }
+
+h4 {
+  & > i.ico-tag {
+    font-size: 18px;
+  }
+}
+

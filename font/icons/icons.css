@@ -1,10 +1,10 @@
 @font-face {
     font-family: "icons";
-    src: url("./icons.eot?877605a3411af7fbbe5343125727771b?#iefix") format("embedded-opentype"),
-url("./icons.woff2?877605a3411af7fbbe5343125727771b") format("woff2"),
-url("./icons.woff?877605a3411af7fbbe5343125727771b") format("woff"),
-url("./icons.ttf?877605a3411af7fbbe5343125727771b") format("truetype"),
-url("./icons.svg?877605a3411af7fbbe5343125727771b#icons") format("svg");
+    src: url("./icons.eot?f2fcf36cdbb403b7efc30b86fea08802?#iefix") format("embedded-opentype"),
+url("./icons.woff2?f2fcf36cdbb403b7efc30b86fea08802") format("woff2"),
+url("./icons.woff?f2fcf36cdbb403b7efc30b86fea08802") format("woff"),
+url("./icons.ttf?f2fcf36cdbb403b7efc30b86fea08802") format("truetype"),
+url("./icons.svg?f2fcf36cdbb403b7efc30b86fea08802#icons") format("svg");
 }
 
 i {
@@ -97,15 +97,18 @@ i[class^="ico-"]:before, i[class*=" ico-"]:before {
 .ico-settings:before {
     content: "\f119";
 }
-.ico-time:before {
+.ico-tag:before {
     content: "\f11a";
 }
-.ico-toggle:before {
+.ico-time:before {
     content: "\f11b";
 }
-.ico-trash:before {
+.ico-toggle:before {
     content: "\f11c";
 }
-.ico-validation:before {
+.ico-trash:before {
     content: "\f11d";
+}
+.ico-validation:before {
+    content: "\f11e";
 }

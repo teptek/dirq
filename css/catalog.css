@@ -59,7 +59,7 @@ div.catalog-4g86b3-Page-Page {
   margin: 10px;
 }
 
-.preview .inner {
+.preview > .inner {
     display: inline-block;
     width: 100%;
     text-align: center;
@@ -69,7 +69,7 @@ div.catalog-4g86b3-Page-Page {
     border-radius: 3px 3px 0 0;
 }
 
-.preview .inner i {
+.preview > .inner > i {
     line-height: 85px;
     font-size: 40px;
     color: #333;
