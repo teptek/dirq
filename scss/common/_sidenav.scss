@@ -21,6 +21,7 @@
       font-size: $font-size;
       @include ease(opacity);
       @include ease(color);
+      text-decoration: none;
       &.active {
         border-left: 3px solid $dark-grey-blue;
         opacity: 1;
@@ -90,8 +91,6 @@
     }
     i[class*="ico-"] {
       font-size: 22px;
-      top: 2px;
-      position: relative;
       padding-right: 16px;
       padding-left: 1px;
     }

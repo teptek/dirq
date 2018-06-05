@@ -11,6 +11,10 @@ i[class*="ico-"] {
   }
 }
 
+i[class^="ico-"]:before, i[class*=" ico-"]:before {
+  vertical-align: middle;
+}
+
 .ico-blue {
   color: $blue;
 }

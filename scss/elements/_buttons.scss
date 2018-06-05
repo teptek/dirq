@@ -22,6 +22,7 @@
 
 button {
   border: medium none;
+  background-color: transparent;
   &:hover, &:focus {
     outline: medium none;
   }
