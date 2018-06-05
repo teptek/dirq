@@ -62,6 +62,23 @@
       div[class*="col-md-"] {
         padding: 0;
       }
+      .modal-options-ipn {
+        .modal-ipn-field {
+          float: left;
+          width: 50%;
+        }
+        .modal-ipn-name {
+          text-transform: inherit;
+          font-size: $font-size;
+
+          clear: left;
+          margin-top: 32px;
+          margin-left: 15px;
+        }
+      }
+      .modal-options-profile {
+        width: 50%;
+      }
     }
     .modal-footer {
       font-weight: 500;

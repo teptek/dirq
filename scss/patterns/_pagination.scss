@@ -34,7 +34,10 @@
       cursor: default;
       color: $grey;
       border-bottom: 3px solid transparent;
-      &.active {
+      a {
+        cursor: default;
+      }
+      &.active, &.active a {
         cursor: pointer;
         color: #000000;
         border-bottom: 3px solid transparent;
