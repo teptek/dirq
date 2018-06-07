@@ -2,7 +2,7 @@
   width: 8px;
   //background: rgb(111,111,111);
 }
-.modal-dialog {
+.modal-dialog, .mat-dialog-container {
   max-width: 100%;
   .modal-content-options {
     width: 800px;
