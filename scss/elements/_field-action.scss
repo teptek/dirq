@@ -46,4 +46,13 @@
       padding: 0;
     }
   }
+  &.field-action-loading {
+    button {
+      & > svg {
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+      }
+    }
+  }
 }
