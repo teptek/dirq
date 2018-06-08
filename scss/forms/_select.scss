@@ -35,8 +35,7 @@
     cursor: not-allowed;
   }
   &.error {
-    border: 1px solid $scarlet;
-    background-image: url('../img/select.svg');
+    border: 1px solid $red;
   }
 }
 

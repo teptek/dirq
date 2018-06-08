@@ -161,12 +161,33 @@ ul {
   }
 }
 
+@mixin label() {
+  &:not(.checkbox) {
+    font-size: $font-sm;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+  }
+}
+
 .label, .rlabel, label {
-  font-size: $font-sm;
-  text-transform: uppercase;
+  @include label();
   color: $grey-blue;
-  font-weight: 500;
-  letter-spacing: 0.03em;
+}
+
+.label-red {
+  @include label();
+   color: $red;
+}
+
+.label-green {
+  @include label();
+  color: $green;
+}
+
+.label-blue {
+  @include label();
+  color: $blue;
 }
 
 .rlabel {
@@ -195,9 +216,47 @@ hr {
   margin: 0 auto 10px;
 }
 
+.h2 {
+  font-size: $font-h2;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 h4 {
   & > i.ico-tag {
     font-size: 18px;
   }
 }
 
+h5 {
+  font-size: $font-size;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: $font-input;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.no-margin {
+  margin: 0;
+  padding: 0;
+}
+
+.country {
+  h1, h2, h3, h4, h5, h6, strong {
+    display: inline;
+    vertical-align: middle;
+  }
+  span, div, i {
+    &[class*="country-flag-"] {
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+  }
+}
+
+.strong {
+  font-weight: 500;
+}

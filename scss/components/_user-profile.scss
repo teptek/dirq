@@ -1,51 +1,15 @@
-@mixin user-button () {
-  font-weight: 500;
-  padding: 10px 20px;
-  &:hover, &:focus {
-    opacity: 0.75;
-  }
-  [class*="ico-"] {
-    height: 20px;
-    width: 18px;
-    display: inline-block;
-    position: relative;
-    vertical-align: middle;
-    margin-right: 10px;
-  }
-}
-
 .user-profile {
   text-align: center;
   border-bottom: 1px solid $light-grey;
   padding-bottom: 25px;
-  .user-ico {
-    margin-bottom: 5px;
-  }
   h4 {
     font-size: $font-h4;
-  }
-  .user-button {
-    margin-top: 20px;
-  }
-  .user-change {
-    text-align: right;
-    color: $blue;
-    border-right: 1px solid $light-grey;
-    @include user-button();
-  }
-  .user-active {
-    text-align: left;
-    color: $red;
-    @include user-button();
-    .ico-off-red {
-      width: 16px;
-    }
-  }
-  .col-md-6 {
-    width: 50%;
   }
   .ico-tag {
     margin-bottom: 10px;
     display: block;
+  }
+  a label {
+    cursor: pointer;
   }
 }

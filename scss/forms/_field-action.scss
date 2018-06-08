@@ -48,11 +48,32 @@
   }
   &.field-action-loading {
     button {
-      & > svg {
+      i {
+        display: none;
+      }
+      &:after {
+        background-image: url("../img/motion/spinner.svg");
+        content: '';
         width: 25px;
         height: 25px;
-        margin-right: 5px;
+        display: block;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        right: -6px;
+        position: relative;
+        top: -2px
       }
+    }
+  }
+  &.error {
+    input[type="text"] {
+      border: 1px solid $red;
+      border-right: medium none;
+    }
+    button {
+      border: 1px solid $red;
+      border-left: medium none;
     }
   }
 }

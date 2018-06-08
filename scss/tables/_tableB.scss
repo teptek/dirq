@@ -1,6 +1,5 @@
-/* scss/modules/_tableB.scss */
-
 .table-b {
+  @include table();
   font-size: $font-input;
   .table-color-tag {
     width: 30%;

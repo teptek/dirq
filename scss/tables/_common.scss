@@ -1,6 +1,4 @@
-/* scss/modules/_tableA.scss */
-
-table:not(.catalog-awit0i-Table-Table) {
+@mixin table() {
   background-color: white;
   width: 100%;
   border-spacing: 0;

@@ -1,20 +1,42 @@
 .toggle {
   background-color: $green;
-  content: 'ON';
-  width: 34px;
-  height: 16px;
+  width: 44px;
+  height: 19px;
+  position: relative;
   @include border-radius(30px);
-  &.toggle-off {
-    background-color: $lighter-grey;
-    color: $grey;
-    content: 'OFF';
+  cursor: pointer;
+  &::after {
+    content: 'ON';
+    display: inline-block;
+    position: absolute;
+    font-weight: 500;
+    color: white;
+    font-size: 10px;
+    left: 7px;
+    top: 0;
   }
   .toggle-button {
     @include border-radius(30px);
     background-color: white;
-    width: 12px;
-    height: 12px;
-    display: inline;
+    width: 15px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    border: none;
+  }
+  &.toggle-off {
+    background-color: $lighter-grey;
+    color: $grey;
+    &::after {
+      content: 'OFF';
+      right: 6px;
+      left: inherit;
+    }
+    .toggle-button {
+      left: 2px;
+    }
   }
 }
 
