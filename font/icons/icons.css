@@ -1,10 +1,10 @@
 @font-face {
     font-family: "icons";
-    src: url("./icons.eot?7a559c7864819d37b5a179d8c22b322f?#iefix") format("embedded-opentype"),
-url("./icons.woff2?7a559c7864819d37b5a179d8c22b322f") format("woff2"),
-url("./icons.woff?7a559c7864819d37b5a179d8c22b322f") format("woff"),
-url("./icons.ttf?7a559c7864819d37b5a179d8c22b322f") format("truetype"),
-url("./icons.svg?7a559c7864819d37b5a179d8c22b322f#icons") format("svg");
+    src: url("./icons.eot?45290d3cb6ef44ea0516a65aa8f06c56?#iefix") format("embedded-opentype"),
+url("./icons.woff2?45290d3cb6ef44ea0516a65aa8f06c56") format("woff2"),
+url("./icons.woff?45290d3cb6ef44ea0516a65aa8f06c56") format("woff"),
+url("./icons.ttf?45290d3cb6ef44ea0516a65aa8f06c56") format("truetype"),
+url("./icons.svg?45290d3cb6ef44ea0516a65aa8f06c56#icons") format("svg");
 }
 
 i {
@@ -46,72 +46,90 @@ i[class^="ico-"]:before, i[class*=" ico-"]:before {
 .ico-dashboard:before {
     content: "\f108";
 }
-.ico-expand-off:before {
+.ico-deploy:before {
     content: "\f109";
 }
-.ico-expand-on:before {
+.ico-documentation:before {
     content: "\f10a";
 }
-.ico-globe:before {
+.ico-expand-off:before {
     content: "\f10b";
 }
-.ico-ico-arrow-rd-left:before {
+.ico-expand-on:before {
     content: "\f10c";
 }
-.ico-ico-arrow-rd-right:before {
+.ico-filter:before {
     content: "\f10d";
 }
-.ico-logo-a:before {
+.ico-flag:before {
     content: "\f10e";
 }
-.ico-logo-app:before {
+.ico-globe:before {
     content: "\f10f";
 }
-.ico-logo-monochrome-grey:before {
+.ico-ico-arrow-rd-left:before {
     content: "\f110";
 }
-.ico-logo.dirq:before {
+.ico-ico-arrow-rd-right:before {
     content: "\f111";
 }
-.ico-menu:before {
+.ico-info:before {
     content: "\f112";
 }
-.ico-more:before {
+.ico-list:before {
     content: "\f113";
 }
-.ico-off:before {
+.ico-logo-a:before {
     content: "\f114";
 }
-.ico-plus:before {
+.ico-logo-app:before {
     content: "\f115";
 }
-.ico-renault:before {
+.ico-logo-monochrome-grey:before {
     content: "\f116";
 }
-.ico-search-rd:before {
+.ico-logo.dirq:before {
     content: "\f117";
 }
-.ico-search:before {
+.ico-menu:before {
     content: "\f118";
 }
-.ico-select:before {
+.ico-more:before {
     content: "\f119";
 }
-.ico-settings:before {
+.ico-off:before {
     content: "\f11a";
 }
-.ico-tag:before {
+.ico-plus:before {
     content: "\f11b";
 }
-.ico-time:before {
+.ico-renault:before {
     content: "\f11c";
 }
-.ico-toggle:before {
+.ico-search-rd:before {
     content: "\f11d";
 }
-.ico-trash:before {
+.ico-search:before {
     content: "\f11e";
 }
-.ico-validation:before {
+.ico-select:before {
     content: "\f11f";
+}
+.ico-settings:before {
+    content: "\f120";
+}
+.ico-tag:before {
+    content: "\f121";
+}
+.ico-time:before {
+    content: "\f122";
+}
+.ico-toggle:before {
+    content: "\f123";
+}
+.ico-trash:before {
+    content: "\f124";
+}
+.ico-validation:before {
+    content: "\f125";
 }
