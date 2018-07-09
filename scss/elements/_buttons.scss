@@ -18,6 +18,10 @@
   &:hover, &:focus {
     @include ease(background-color);
   }
+  & > .ico-arrow-right {
+    padding: 0 0 0 2px;
+    left: 5px;
+  }
 }
 
 button {
@@ -42,11 +46,28 @@ button {
   }
 }
 
+[class*="button-ghost-"] {
+  i[class*="ico-"] {
+    font-size: 14px;
+  }
+}
+
 .button-ghost-grey {
   @include button;
   color: #000000;
   &:hover, &:focus {
     background-color: $light-grey;
+  }
+}
+
+.button-ghost-blue {
+  @include button;
+  color: $blue;
+  opacity: 0.5;
+  &:hover, &:focus {
+    @include ease(opacity);
+    opacity: 1;
+    background-color: $cloud-blue;
   }
 }
 
