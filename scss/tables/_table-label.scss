@@ -8,6 +8,17 @@
   th {
     @extend .label;
     border-bottom: $border;
+    a:not([href]) {
+      color: $grey-blue;
+      position: relative;
+      &:hover, &:focus {
+        color: $blue;
+      }
+      & > i {
+        position: absolute;
+        top: -5px;
+      }
+    }
   }
   tbody {
     &:before {

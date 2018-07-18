@@ -15,6 +15,10 @@
     background-color: lighten($blue, 55%);
     color: $blue;
   }
+  &.status-orange {
+    background-color: lighten($sun-yellow, 25%);
+    color: $orange;
+  }
   &.status-green {
     background-color: lighten($green, 57%);
     color: $green;
