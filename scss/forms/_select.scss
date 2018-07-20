@@ -40,6 +40,9 @@
       background-color: white;
     }
   }
+  &:focus {
+    border: 1px solid lighten($blue, 40%);
+  }
 }
 
 select:-moz-focusring {

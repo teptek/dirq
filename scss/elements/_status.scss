@@ -1,5 +1,5 @@
 .status {
-  display: table;
+  display: table-cell;
   font-weight:  500;
   @include border-radius(2px);
   padding: 6px;

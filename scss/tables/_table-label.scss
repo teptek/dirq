@@ -30,7 +30,7 @@
     tr {
       td {
         vertical-align: middle;
-        padding: 8px 0;
+        padding: 6px 0;
         label.checkbox {
           margin: 0;
         }
@@ -43,7 +43,7 @@
       }
       &:hover, &:focus {
         td {
-          background-color: darken($cloud-blue, 3%);
+          background-color: $cloud-blue;
         }
       }
       &:first-child {
@@ -57,6 +57,34 @@
     td, th {
       &:first-child {
         padding-left: 7px;
+      }
+    }
+  }
+  a {
+    & > i {
+      &[class*="ico-"] {
+        padding: 0 0 0 10px;
+      }
+      &.ico-edit {
+        opacity: 0.6;
+        &:hover, &:focus {
+          opacity: 1;
+        }
+      }
+      &.ico-trash {
+        opacity: 0.3;
+        &:hover, &:focus {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &.table-has-form {
+    tbody tr td {
+      padding-top: 4px;
+      padding-bottom: 4px;
+      .field {
+        margin-right: 10px;
       }
     }
   }
