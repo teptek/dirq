@@ -19,14 +19,16 @@
 }
 
 @mixin input-text-button () {
-  input[type='text'] {
-    @include input-text;
-    @include border-radius(3px 0 0 3px);
-    padding: 0 0 0 10px;
-    width: calc(100% - 40px);
-    border-right: medium none;
-    &:focus {
+  input {
+    &[type='text'], &[type='number'] {
+      @include input-text;
+      @include border-radius(3px 0 0 3px);
+      padding: 0 0 0 10px;
+      width: calc(100% - 40px);
       border-right: medium none;
+      &:focus {
+        border-right: medium none;
+      }
     }
   }
   button {
@@ -45,18 +47,22 @@
       padding: 0;
     }
   }
-  input[type='text']:focus + button {
-    border: 1px solid lighten($blue, 40%);
-    border-left: medium none;
+  input {
+    &[type='text'], &[type='number'] {
+      &:focus + button {
+        border: 1px solid lighten($blue, 40%);
+        border-left: medium none;
+      }
+    }
   }
 }
 
-input[type='text'] {
+input[type='text'], input[type='number'] {
   @include input-text;
 }
 
 .field-text-twin {
-  input[type='text'] {
+  input[type='text'], &[type='number'] {
     float: left;
     width: 50%;
     &:first-of-type {
