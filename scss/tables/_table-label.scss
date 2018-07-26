@@ -16,7 +16,7 @@
       }
       & > i {
         position: absolute;
-        top: -5px;
+        top: -4px;
       }
     }
   }
@@ -63,7 +63,7 @@
   a {
     & > i {
       &[class*="ico-"] {
-        padding: 0 0 0 10px;
+        padding: 0 0 0 5px;
       }
       &.ico-edit {
         opacity: 0.6;
