@@ -14,6 +14,9 @@ a {
   &:hover, &:focus {
     color: $dark-grey-blue;
     text-decoration: none;
+    & > i {
+      color: $dark-grey-blue;
+    }
   }
 }
 
