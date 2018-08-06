@@ -103,6 +103,7 @@
 #theme-a, .closed {
   .content .anchor-nav-header {
     @include border-radius(6px 6px 0 0);
+    padding: 25px 25px 0 25px;
   }
   .anchor-nav-header {
     margin-top: 25px;
@@ -110,7 +111,7 @@
     //position: fixed;
     z-index: 2;
     //top: 54px;
-    padding: 25px 25px 0 25px;
+    //padding: 25px 25px 0 25px;
     .button-empty-small {
       position: absolute;
       left: 0;

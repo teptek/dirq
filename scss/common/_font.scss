@@ -111,23 +111,3 @@
   font-weight: 700;
   font-style: normal;
 }
-
-@font-face {
-  font-family:'HelveticaNeueCondensed';
-  src:	url('../font/helvetica/helvetica-neue-condensed-bold.eot');
-  src:	url('../font/helvetica/helvetica-neue-condensed-bold.eot?#iefix') format('embedded-opentype'),
-  url('../font/helvetica/helvetica-neue-condensed-bold.woff2') format('woff2'),
-  url('../font/helvetica/helvetica-neue-condensed-bold.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family:'HelveticaNeueCondensed';
-  src:	url('../font/helvetica/helvetica-neue-condensed-black.eot');
-  src:	url('../font/helvetica/helvetica-neue-condensed-black.eot?#iefix') format('embedded-opentype'),
-  url('../font/helvetica/helvetica-neue-condensed-black.woff2') format('woff2'),
-  url('../font/helvetica/helvetica-neue-condensed-black.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-}
