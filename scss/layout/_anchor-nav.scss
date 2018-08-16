@@ -87,7 +87,7 @@
         }
         &.active {
           color: black;
-          border-bottom: 3px solid $sun-yellow;
+          border-bottom: 3px solid $brand-color;
           .rlabel {
             color: black;
           }
@@ -186,7 +186,7 @@
       }
       &.active {
         color: black;
-        border-bottom: 3px solid $sun-yellow;
+        border-bottom: 3px solid $brand-color;
         .rlabel {
           color: black;
         }
