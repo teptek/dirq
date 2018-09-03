@@ -12,7 +12,7 @@ $container-padding: 25px;
   .content {
     display: table;
     width: 100%;
-    .container, .anchor-nav-header {
+    .container {
       position: relative;
       @include border-radius(6px);
       background-color: white;
@@ -21,7 +21,7 @@ $container-padding: 25px;
       width: calc(100% - #{$sidebar-width + $main-space*2});
       //box-shadow: $box-shadow;
       @include ease-multi(width 0.3s, left 0.3s);
-      margin-bottom: -45px;
+      //margin-bottom: -45px;
       left: $sidebar-width;
       min-height: 600px;
     }
@@ -61,7 +61,7 @@ $container-padding: 25px;
     padding: 0 #{$main-space} 0 0;
     position: relative;
     height: $sidebar-width;
-    z-index: 2;
+    z-index: 5;
     .top-nav-settings {
       cursor: pointer;
       float: right;

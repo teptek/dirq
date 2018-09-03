@@ -13,7 +13,7 @@ $sidebar-width-open: 240px;
     position: absolute;
     top: 0;
     bottom: 0;
-    z-index: 1;
+    z-index: 4;
     box-shadow: $box-shadow;
     overflow: hidden;
     & > ul {
@@ -107,7 +107,7 @@ $sidebar-width-open: 240px;
         & > i[class*="ico-"].ico-small {
           font-size: 16px;
           margin-right: 10px;
-          width: 16px;
+          width: 18px;
           display: inline-table;
           position: relative;
           text-align: center;
