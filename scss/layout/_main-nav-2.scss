@@ -140,10 +140,13 @@ $container-padding: 25px;
       right: 15px;
       top: 66px;
       display: none;
+      opacity: 0;
     }
     &.active {
       .dropdown {
         display: block;
+        opacity: 1;
+        animation: fade 1s;
       }
     }
   }
@@ -188,5 +191,15 @@ $container-padding: 25px;
       top: 14px;
       left: -3px;
     }
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
   }
 }
