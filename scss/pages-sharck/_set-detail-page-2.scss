@@ -1,5 +1,5 @@
 .anchor-nav-header {
-  position: relative;
+  position: absolute;
   @include border-radius(6px 6px 0 0);
   background-color: white;
   padding: $container-padding $container-padding 0 $container-padding;
