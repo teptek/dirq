@@ -46,6 +46,38 @@ button {
       padding-right: 5px;
     }
   }
+  &.loader {
+    & > i[class*="ico-"] {
+      &:before {
+        content: '';
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: center left -2px;
+        background-image: url("../img/motion/spinner-black.svg");
+        height: 16px;
+        width: 16px;
+        display: inline-block;
+      }
+    }
+    & > .ico-blue:before {
+      background-image: url("../img/motion/spinner-blue.svg");
+    }
+    & > i.ico-dark-blue:before {
+      background-image: url("../img/motion/spinner-dark-blue.svg");
+    }
+    & > i.ico-red:before {
+      background-image: url("../img/motion/spinner-red.svg");
+    }
+    & > i.ico-white:before {
+      background-image: url("../img/motion/spinner-white.svg");
+    }
+    & > i.ico-grey:before {
+      background-image: url("../img/motion/spinner-grey.svg");
+    }
+    & > i.ico-green:before {
+      background-image: url("../img/motion/spinner-green.svg");
+    }
+  }
 }
 
 [class*="button-ghost-"] {
@@ -107,6 +139,7 @@ button {
   &:hover, &:focus {
     background-color: $light-grey;
   }
+  i[class*="ico-"] {}
 }
 
 .button-yellow {
@@ -114,7 +147,19 @@ button {
   color: black;
   background-color: $sun-yellow;
   &:hover, &:focus {
-    background-color: lighten( $sun-yellow, 20% );
+    background-color: lighten( $sun-yellow, 12% );
+  }
+}
+
+.button-green {
+  @include button;
+  color: white;
+  background-color: $green;
+  &:hover, &:focus {
+    background-color: lighten( $green, 5% );
+  }
+  &.loader > i[class*="ico-"]:before {
+    background-image: url("../img/motion/spinner-white.svg");
   }
 }
 
@@ -123,7 +168,10 @@ button {
   color: white;
   background-color: $blue;
   &:hover, &:focus {
-    background-color: lighten($blue, 5%);
+    background-color: lighten($blue, 8%);
+  }
+  &.loader > i[class*="ico-"]:before {
+    background-image: url("../img/motion/spinner-white.svg");
   }
 }
 
@@ -134,6 +182,9 @@ button {
   &:hover, &:focus {
     background-color: lighten($red, 50%);
   }
+  &.loader > i[class*="ico-"]:before {
+    background-image: url("../img/motion/spinner-red.svg");
+  }
 }
 
 .button-blue-light {
@@ -141,7 +192,10 @@ button {
   color: $blue;
   background-color: lighten($blue, 55%);
   &:hover, &:focus {
-    background-color: lighten($blue, 50%);
+    background-color: lighten($blue, 57%);
+  }
+  &.loader > i[class*="ico-"]:before {
+    background-image: url("../img/motion/spinner-blue.svg");
   }
 }
 
@@ -222,3 +276,4 @@ button {
     color: white;
   }
 }
+
